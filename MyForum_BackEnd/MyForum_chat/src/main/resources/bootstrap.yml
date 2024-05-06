@@ -1,0 +1,14 @@
+server:
+  port: 8400
+spring:
+  application:
+    name: chatService
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 1000MB
+  cloud:
+    nacos:
+      server-addr: localhost:8848 # nacos服务地址
+      config:
+        file-extension: yaml # 文件后缀名

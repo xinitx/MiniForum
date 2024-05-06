@@ -1,0 +1,15 @@
+server:
+  port: 10010
+ # ssl:
+ #   key-store: classpath:init33.top.jks   #您需要使用实际的证书名称替换domain_name.jks
+ #   key-store-password: ua74hjbt    #填写jks-password.txt文件内的密码。
+ #   keyStoreType: JKS #JKS格式证书密钥库类型。PFX格式的证书密钥库类型为PKCS12。
+spring:
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      server-addr: localhost:8848 # nacos地址
+      config:
+        file-extension: yaml # 文件后缀名
+

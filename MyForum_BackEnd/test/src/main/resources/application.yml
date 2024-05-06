@@ -1,0 +1,6 @@
+spring.profiles.include: bb
+spring:
+  config:
+    additional-location: classpath:test/test.yml
+    import: classpath:dd.yml
+aa: 3
